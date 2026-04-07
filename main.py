@@ -1,7 +1,9 @@
-"""Main module."""
+"""Main module - updated."""
 
-def hello():
-    print("Hello from gh-nurture!")
+import sys
+
+def hello(name="world"):
+    print(f"Hello, {name}!")
 
 if __name__ == "__main__":
-    hello()
+    hello(sys.argv[1] if len(sys.argv) > 1 else "world")
